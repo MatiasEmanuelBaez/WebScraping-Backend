@@ -1,32 +1,45 @@
 # Web Automation Backend
 
-El proyecto consiste en un backend desarrollado en Python para automatizar la extracción de datos de diferentes páginas web utilizando *Playwright*. La aplicación extrae de cada sitio los datos más relevantes: nombre del producto, descripción, precio e imagen, y los almacena en una base de datos *PostgreSQL*.
+<img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker" title="Docker"/> <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" title="Python"/> <img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="PostgreSQL" title="PostgreSQL"/> <img src="https://playwright.dev/img/playwright-logo.svg" width="48" alt="Playwright" title="Playwright"/> <img src="https://img.icons8.com/color/48/000000/api.png" alt="API REST" title="API REST"/>
 
->Actualmente el código soporta la automatización de extracción de datos de dos páginas web, pero está es fácilmente escalable a más sitios.
+## 📋 Descripción del Proyecto
 
->El proyecto está integrado con Docker para poder ejecutarlo rápidamente, sin problemas de configuración o dependencias.
+Backend desarrollado en Python para automatizar la extracción de datos de páginas web utilizando **Playwright**. La aplicación extrae información relevante de productos y almacena los datos en una base de datos **PostgreSQL** de manera eficiente y escalable.
+
+## 🎯 Características
+
+- **Web Scraping**: Extracción de datos de múltiples sitios web
+- **Almacenamiento**: Base de datos PostgreSQL para persistencia
+- **Escalabilidad**: Arquitectura modular para agregar nuevos sitios
+- **Containerizado**: Implementación con Docker para fácil despliegue
+- **API REST**: Interfaz para interactuar con los datos extraídos
 
 
-## Tecnologías utilizadas
+## 🛠️ Stack Tecnológico
 
-* Docker
-* Python
-* Playwright
-* PostgreSQL
-* API REST
+| Tecnología | Función |
+||-|
+| **🐳 Docker** | Containerización y orquestación |
+| **🐍 Python** | Lógica de backend y scraping |
+| **🎭 Playwright** | Automatización y extracción web |
+| **🐘 PostgreSQL** | Almacenamiento de datos |
+| **🔗 FastAPI** | API REST para interfaz |
 
-## Base de datos
 
-Para almacenar la información extraída se utiliza una tabla productos donde se guarda toda la información relevante de cada producto, y una tabla tasks que mantiene un registro de cada ejecución del scraper.
+## 📊 Diagrama de Base de Datos
 
-<img src="misc\db.png" width="600" />
+<p align="center">
+  <img src="misc\db.png" width="600" alt="Diagrama de Base de Datos"/>
+</p>
 
-## Páginas soportadas
 
-* https://www.saucedemo.com/
-* https://practicesoftwaretesting.com/
+## 🌐 Sitios Web Soportados
 
-## Instalación y ejecución
+[🛒 SauceDemo](https://www.saucedemo.com/)
+
+[🧪 Practice Software Testing](https://practicesoftwaretesting.com/)
+
+## 🚀 Instalación y Ejecución
 
 Gracias a Docker, las pruebas pueden realizarse fácilmente siguiendo estos pasos:
 
@@ -34,11 +47,13 @@ Gracias a Docker, las pruebas pueden realizarse fácilmente siguiendo estos paso
 2. Modificar, si es necesario, el archivo *.env* con la configuración deseada.
 3. Tener Docker instalado y ejecutándose.
 4. Desde consola, levantar el proyecto con:
-~~~ 
+
+~~~
 docker-compose up --build
 ~~~
+
 5. Podremos acceder a la API desde http://localhost:8000
 
+<br>
 
-
----------------------------
+*`Proyecto desarrollado como parte de un challenge individual de scraping a páginas web`*
