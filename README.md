@@ -14,17 +14,15 @@ Backend desarrollado en Python para automatizar la extracción de datos de pági
 - **Containerizado**: Implementación con Docker para fácil despliegue
 - **API REST**: Interfaz para interactuar con los datos extraídos
 
-
 ## 🛠️ Stack Tecnológico
 
 | Tecnología | Función |
-||-|
+|------------|---------|
 | **🐳 Docker** | Containerización y orquestación |
 | **🐍 Python** | Lógica de backend y scraping |
 | **🎭 Playwright** | Automatización y extracción web |
 | **🐘 PostgreSQL** | Almacenamiento de datos |
 | **🔗 FastAPI** | API REST para interfaz |
-
 
 ## 📊 Diagrama de Base de Datos
 
